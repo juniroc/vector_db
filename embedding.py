@@ -6,10 +6,7 @@ from sentence_transformers import SentenceTransformer
 
 class Embedding():
     def __init__(self):
-
-        # Load https://huggingface.co/sentence-transformers/all-mpnet-base-v2
         self.model = SentenceTransformer("all-mpnet-base-v2")
-
 
     def get_sentence_transformer_ef(self, source_dataframe: pd.DataFrame, column_name: str):
 
